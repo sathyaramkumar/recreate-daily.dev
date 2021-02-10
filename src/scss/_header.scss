@@ -1,0 +1,51 @@
+// desktop view
+.header {
+    @include flex-jc-ai(row, space-between, center);
+    padding: 10px 0;
+    border-bottom: 1px solid $text-muted;
+    &__link {
+        margin-left: 15px;
+        font-size: $font-size-22;
+        font-weight: $font-weight-600;
+        color: $black;
+        span {
+            font-size: $font-size-15;
+            color: $text-muted;
+        }
+    }
+    &__nav {
+        margin-top: 10px;
+        &__list {
+            @include flex(row);
+            .nav__item {
+                margin: 0 10px;
+                .nav__link {
+                    font-size: $font-size-25;
+                    color: $text-muted;
+                    &:hover {
+                        color: $black;
+                    }
+                }
+                .nav__profile {
+                    @include flex-jc-ai(row, center, center);
+                    height: 30px;
+                    
+                    border-radius: 7px 0 0 7px;
+                    background-color: $light-black;
+                    span {
+                        display: block;
+                        padding: 5px 10px;
+                        font-size: 15px;
+                        font-weight: $font-weight-600;
+                        color: $white;
+                    }
+                    .nav__link__img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

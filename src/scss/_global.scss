@@ -1,0 +1,42 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-source;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+button {
+    font-family: $font-family-source;
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin flex-jc-ai($direction, $jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $direction;
+}

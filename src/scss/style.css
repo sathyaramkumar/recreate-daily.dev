@@ -1,0 +1,122 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  font-family: "Source Code Pro", monospace;
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.438);
+}
+
+.header__link {
+  margin-left: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+}
+
+.header__link span {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.438);
+}
+
+.header__nav {
+  margin-top: 10px;
+}
+
+.header__nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header__nav__list .nav__item {
+  margin: 0 10px;
+}
+
+.header__nav__list .nav__item .nav__link {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.438);
+}
+
+.header__nav__list .nav__item .nav__link:hover {
+  color: black;
+}
+
+.header__nav__list .nav__item .nav__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 30px;
+  border-radius: 7px 0 0 7px;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.header__nav__list .nav__item .nav__profile span {
+  display: block;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+.header__nav__list .nav__item .nav__profile .nav__link__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */

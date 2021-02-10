@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daily dev</title>
+        <!-- font aweson icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <!-- google font family -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+        <!-- scss link -->
+        <link rel="stylesheet" href="src/scss/style.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header">
+            <a class="header__link" href="#">
+                daily<span>.dev</span>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            <i class="fas fa-gift"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            <i class="fas fa-bookmark"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            <i class="far fa-clock"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            <i class="far fa-newspaper"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link nav__profile" href="#">
+                            <span>1</span>
+                            <img class="nav__link__img" src="src/img/dummy-image.png" alt="profile image">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar__hero">
+                <label class="sidebar__switch">
+                    <input class="sidebar__switch__input" type="checkbox">
+                    <span class="sidebar__switch__slider"></span>
+                </label>
+                <h3 class="sidebar__title">MY TAGS</h3>
+            </div>
+
+            <div class="sidebar__nav__container">
+                <nav class="sidebar__hash__nav">
+                    <ul class="sidebar__nav__list">
+                        <li class="sidebar__nav__item">
+                            <a class="sidebar__nav__link" href="#">#tech-news</a>
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <a class="sidebar__nav__link" href="#">#general-programming</a>
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <a class="sidebar__nav__link" href="#">#web dev</a>
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <a class="sidebar__nav__link" href="#">#security</a>
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <a class="sidebar__nav__link" href="#">#javascript</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <nav class="sidebar__link__nav">
+                    <ul class="sidebar__nav__list">
+                        <li class="sidebar__nav__item">
+                            <img class="sidebar__nav__img" src="src/img/dummy-image.png" alt="profile image">
+                            20 seconds of code
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <img class="sidebar__nav__img" src="src/img/dummy-image.png" alt="profile image">
+                            80 LVEL
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <img class="sidebar__nav__img" src="src/img/dummy-image.png" alt="profile image">
+                            Addy Osmani
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <img class="sidebar__nav__img" src="src/img/dummy-image.png" alt="profile image">
+                            Airbnb
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <img class="sidebar__nav__img" src="src/img/dummy-image.png" alt="profile image">
+                            Algolia Blog
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <form class="sidebar__search">
+                <i class="fas fa-search"></i>
+                <input class="sidebar__search__input" type="search" placeholder="Search Sources">
+            </form>
+        </div>
+
+        <!-- menu bar -->
+        <div class="menu__bar">
+
+            <div class="menu__bar__left">
+                <form class="menu__bar__search">
+                    <button class="menu__bar__search__btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input class="menu__bar__search__input" type="search" placeholder="Search">
+                </form>
+                <button class="menu__bar__integration">
+                    <i class="fas fa-signature"></i>
+                </button>
+                <button class="menu__bar__popular">
+                    POPULAR
+                </button>
+                <button class="menu__bar__most">
+                    MOST UPVOTED
+                </button>
+                <button class="menu__bar__recent">
+                    RECENT
+                </button>
+            </div>
+
+            <div class="menu__bar__right">
+                <p class="menu__bar__text">
+                    SHOW MOST VISITED SITES
+                </p>
+                <button class="menu__bar__add">
+                    +
+                </button>
+            </div>
+        </div>
+
+        <!-- blog -->
+        <section class="blog">
+
+            <div class="blog__card">
+                <div class="blog__card__body">
+                    <img class="blog__card__body__img" src="src/img/dummy-image.png" alt="profile image">
+                    <p class="blog__card__body__title">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <time class="blog__card__body__time">
+                        Today
+                    </time>
+                </div>
+                <img class="blog__card__img" src="src/img/dummy-image.png" alt="blog image">
+                <div class="blog__card__footer">
+                    <span class="blog__card__footer__reach">
+                        <i class="fas fa-arrow-up"></i> 15
+                    </span>
+                    <span class="blog__card__footer__comment">
+                        <i class="fas fa-comment-alt"></i> 5
+                    </span>
+                </div>
+            </div>
+
+            <div class="blog__card">
+                <div class="blog__card__body">
+                    <img class="blog__card__body__img" src="src/img/dummy-image.png" alt="profile image">
+                    <p class="blog__card__body__title">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <time class="blog__card__body__time">
+                        Today
+                    </time>
+                </div>
+                <img class="blog__card__img" src="src/img/dummy-image.png" alt="blog image">
+                <div class="blog__card__footer">
+                    <span class="blog__card__footer__reach">
+                        <i class="fas fa-arrow-up"></i> 15
+                    </span>
+                    <span class="blog__card__footer__comment">
+                        <i class="fas fa-comment-alt"></i> 5
+                    </span>
+                </div>
+            </div>
+
+            <div class="blog__card">
+                <div class="blog__card__body">
+                    <img class="blog__card__body__img" src="src/img/dummy-image.png" alt="profile image">
+                    <p class="blog__card__body__title">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <time class="blog__card__body__time">
+                        Today
+                    </time>
+                </div>
+                <img class="blog__card__img" src="src/img/dummy-image.png" alt="blog image">
+                <div class="blog__card__footer">
+                    <span class="blog__card__footer__reach">
+                        <i class="fas fa-arrow-up"></i> 15
+                    </span>
+                    <span class="blog__card__footer__comment">
+                        <i class="fas fa-comment-alt"></i> 5
+                    </span>
+                </div>
+            </div>
+
+            <div class="blog__card">
+                <div class="blog__card__body">
+                    <img class="blog__card__body__img" src="src/img/dummy-image.png" alt="profile image">
+                    <p class="blog__card__body__title">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <time class="blog__card__body__time">
+                        Today
+                    </time>
+                </div>
+                <img class="blog__card__img" src="src/img/dummy-image.png" alt="blog image">
+                <div class="blog__card__footer">
+                    <span class="blog__card__footer__reach">
+                        <i class="fas fa-arrow-up"></i> 15
+                    </span>
+                    <span class="blog__card__footer__comment">
+                        <i class="fas fa-comment-alt"></i> 5
+                    </span>
+                </div>
+            </div>
+
+            <div class="blog__card">
+                <div class="blog__card__body">
+                    <img class="blog__card__body__img" src="src/img/dummy-image.png" alt="profile image">
+                    <p class="blog__card__body__title">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <time class="blog__card__body__time">
+                        Today
+                    </time>
+                </div>
+                <img class="blog__card__img" src="src/img/dummy-image.png" alt="blog image">
+                <div class="blog__card__footer">
+                    <span class="blog__card__footer__reach">
+                        <i class="fas fa-arrow-up"></i> 15
+                    </span>
+                    <span class="blog__card__footer__comment">
+                        <i class="fas fa-comment-alt"></i> 5
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <div class="page__sroller">
+            <a class="page__sroller__link" href="#">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </body>
+</html>
