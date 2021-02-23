@@ -26,6 +26,11 @@
                         color: $black;
                     }
                 }
+                .save {
+                    &:hover {
+                        color: orange;
+                    }
+                }
                 .nav__profile {
                     @include flex-jc-ai(row, center, center);
                     height: 30px;

@@ -1,0 +1,72 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100vh;
+    padding-right: 25px;
+    background-color: $white-smoke;
+    &__hero {
+        .sidebar__switch {
+            &__input {}
+            &__slider {}
+        }
+    }
+
+    &__nav__container {
+        @include flex(row);
+        .sidebar__hash__nav {
+            width: 280px;
+            padding: 10px 20px;
+            overflow-y: scroll;
+            background-color: $white;
+            &__title {
+                padding: 10px 0;
+            }
+            .sidebar__nav__list {
+                .sidebar__nav__item {
+                    padding: 20px 0;
+                    .sidebar__nav__link {
+                        font-weight: $font-weight-600;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .sidebar__link__nav {
+            width: 280px;
+            &__title {}
+            .sidebar__nav__list {
+                .sidebar__nav__item {
+                    @include flex-jc-ai(row, left, center);
+                    padding: 20px 0;
+                    .sidebar__nav__img {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 5px;
+                    }
+                    span {
+                        display: block;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .sidebar__search {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 280px;
+        padding: 5px 20px;
+        background-color: $black;
+        color: $white;
+        &__input {
+            padding: 6px;
+            border: none;
+            background-color: $black;
+            color: $white;
+        }
+    }
+}
